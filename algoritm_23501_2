@@ -1,0 +1,25 @@
+ public static void maxSubarray(int[] array) {
+ 
+        int maxSumArray = array[0];
+        int lastSumArray = array[0];
+        int maxStartIndex = 0;
+        int maxLastIndex = 0;
+        int lastStartIndex = 0;
+      
+        for (int i = 1; i < array.length; i++) {
+ 
+            lastSumArray += array[i];
+            if (lastSumArray < array[i]) {
+                lastStartIndex = i;
+                lastSumArray = array[i];
+            }
+            
+            if (maxSumArray < lastSumArray) {
+                maxLastIndex = i;
+                maxStartIndex = lastStartIndex;
+                maxSumArray = lastSumArray;
+            }
+        }
+ }
+        
+        
