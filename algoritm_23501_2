@@ -19,6 +19,7 @@
                 maxStartIndex = lastStartIndex;
                 maxSumArray = lastSumArray;
             }
+            return Arrays.copyOfRange(array, maxStartIndex,maxLastIndex+1);
         }
  }
         
