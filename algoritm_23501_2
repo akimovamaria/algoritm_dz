@@ -24,3 +24,18 @@
  }
         
         
+        
+        public class MaxSubarrayTest {
+
+    @Test
+
+    public void testMaxSubarray() {
+        int array[] = {10,11,7,10,6};
+//        assertArrayEquals(new int[]{7,10}, MaxSubarray.maxSubarray(array));
+        System.out.println(Arrays.toString(MaxSubarray.maxSubarray(array)));
+
+
+    }
+
+
+}
